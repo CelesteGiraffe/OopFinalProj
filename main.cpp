@@ -1,7 +1,8 @@
 #include <iostream>
 #include "GeneratorFactory.hpp"
 
-// To DO: 
+// To DO:
+// Create a MAKE file to compile the project. 
 // Comment the CPP final implementations with doxygen style comments
 // Utilize the factory to create a Terrain generator and display the generated map to the console.
 // Create a Dungeon and Terrain with a simplistic implementation of the Perlin Noise algorithm.
