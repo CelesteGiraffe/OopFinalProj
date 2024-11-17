@@ -26,13 +26,17 @@ float Map::getValue(int x, int y) const {
 }
 
 void Map::save(const std::string& filename) const {
+    //open the file to be written to
     std::ofstream file(filename, std::ios::binary);
+    // make sure it's open
     if (file.is_open()) {
+        //uses reinterpret cast which pulls the data in a way that can be retrieved later from the file
         file.write(reinterpret_cast<const char*>(&width), sizeof(width));
         file.write(reinterpret_cast<const char*>(&height), sizeof(height));
         for (const auto& column : data) {
             file.write(reinterpret_cast<const char*>(column.data()), height * sizeof(float));
         }
+        //make sure you close the file silly :D
         file.close();
     } else {
         throw std::runtime_error("Map::save failed to open file");

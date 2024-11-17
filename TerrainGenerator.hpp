@@ -59,6 +59,7 @@ private:
 
     void applyNoise();
     void smoothTerrain();
+    void displayTerrain();
 };
 
 #endif // TERRAINGENERATOR_HPP

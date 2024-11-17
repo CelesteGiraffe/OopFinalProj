@@ -1,4 +1,5 @@
 // Need to create Comments for this file in Doxygen format.
+// Singleton Random instance
 
 #include "Random.hpp"
 #include <chrono>
@@ -26,3 +27,4 @@ float Random::getFloat(float min, float max) {
     std::uniform_real_distribution<float> dist(min, max);
     return dist(rng);
 }
+

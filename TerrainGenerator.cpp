@@ -1,4 +1,5 @@
 // Need to comment this file with doxygen style comments
+// Need to setup the enum for the heights to be displayed.
 
 #include "TerrainGenerator.hpp"
 
@@ -26,6 +27,7 @@ void TerrainGenerator::setAmplitude(float amp) {
 void TerrainGenerator::generate() {
     applyNoise();
     smoothTerrain();
+    displayTerrain();
 }
 
 void TerrainGenerator::applyNoise() {
@@ -42,6 +44,11 @@ void TerrainGenerator::applyNoise() {
 void TerrainGenerator::smoothTerrain() {
     // Implement terrain smoothing algorithm in order to make the terrain look more natural and outdoorsy
 }
+
+void TerrainGenerator::displayTerrain() {
+    //displaies the terrain of outdoor level
+}
+
 
 Map& TerrainGenerator::getMap() {
     return map;
