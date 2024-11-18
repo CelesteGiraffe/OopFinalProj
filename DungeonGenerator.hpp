@@ -3,6 +3,7 @@
 
 #include "Generator.hpp"
 #include "Map.hpp"
+#include "Room.hpp"
 
 /**
  * @class DungeonGenerator
@@ -32,34 +33,7 @@ public:
     Map& getMap();
 
 private:
-
-     /**
-    * \struct Room
-    * \brief Represents a rectangular room in the dungeon.
-    */
-     struct Room {
-      int x, y; ///< Top-left corner coordinates of the room.
-      int width, height; ///< Dimensions of the room.
-
-      /**
-       * \brief Checks if this room intersects with another room.
-       * \param other The other room to check intersection with.
-       * \return True if rooms intersect, false otherwise.
-       */
-      bool intersects(const Room& other) const {
-       return (x <= other.x + other.width && x + width >= other.x &&
-               y <= other.y + other.height && y + height >= other.y);
-      }
-
-      /**
-       * \brief Gets the center point of the room.
-       * \return A pair of integers representing the center coordinates.
-       */
-      std::pair<int, int> center() const {
-       return { x + width / 2, y + height / 2 };
-      }
-     };
-
+ 
     Map map;
     std::vector<Room> rooms;
     /**

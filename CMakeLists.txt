@@ -16,4 +16,5 @@ add_executable(untitled main.cpp
         NoiseAlgorithm.hpp
         PerlinNoise.hpp
         PerlinNoise.cpp
-        GeneratorFactory.hpp)
+        GeneratorFactory.hpp
+        Room.hpp)
