@@ -79,7 +79,7 @@ void Map::displayConsole() const {
             } else if (value == EXIT) {     // Exit
                 std::cout << 'X';
             } else if (value = BLANK) {
-                std::cout << '.';
+                std::cout << '.';           // Blank (within Walls)
             } else {
                 std::cout << '?';           // Unknown cell type
             }
