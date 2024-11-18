@@ -20,7 +20,7 @@
 int main() {
     // Sophie's number 60069
     // This see is my test seed 23042934
-    unsigned int seed = 4201337;
+    unsigned int seed = 3;
     int width = 80;
     int height = 20;
 

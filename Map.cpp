@@ -67,19 +67,25 @@ int Map::getHeight() const {
 }
 
 void Map::displayConsole() const {
+
+    std::string green = "\033[32m";
+    std::string gray = "\033[90m";
+    std::string blue = "\033[34m";
+    std::string white = "\033[97m";
+    std::string reset = "\033[0m";
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
             float value = getValue(x, y);
             if (value == WALL) {            // Wall
-                std::cout << '#';
+                std::cout<< white << '#';
             } else if (value == PATH) {     // Open path
-                std::cout << ' ';
+                std::cout<< reset << ' ';
             } else if (value == ENTRANCE) { // Entrance
-                std::cout << 'E';
+                std::cout << green << 'E';
             } else if (value == EXIT) {     // Exit
-                std::cout << 'X';
+                std::cout<< green << 'X';
             } else if (value = BLANK) {
-                std::cout << '.';           // Blank (within Walls)
+                std::cout<< gray << '=';           // Blank (within Walls)
             } else {
                 std::cout << '?';           // Unknown cell type
             }

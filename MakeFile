@@ -1,12 +1,3 @@
-# Compiler and flags
-CXX = c++
-CXXFLAGS = -std=c++17 -Wall -Wextra -g
-
-# Directories
-SRC_DIR = .
-OBJ_DIR = ./cmake-build-debug
-BIN_DIR = ./cmake-build-debug
-
 # Source files
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
