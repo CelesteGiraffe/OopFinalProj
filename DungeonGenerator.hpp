@@ -33,7 +33,7 @@ public:
     Map& getMap();
 
 private:
- 
+
     Map map;
     std::vector<Room> rooms;
     /**
@@ -53,6 +53,10 @@ private:
     */
     void placeEntranceAndExit();
      /**
+    * \brief
+    */
+     void clearLikeWalls(Map& map);
+     /**
     * \brief Boors out a horizontal corridor of paths through the walls
     */
     void carveHorizontalCorridor(int x1, int x2, int y);
@@ -60,6 +64,10 @@ private:
     * \brief Boors out a Vertical corridor of paths through the walls
     */
     void carveVerticalCorridor(int y1, int y2, int x);
+     /**
+    * \brief
+    */
+    bool isSurroundedByWalls(const Map& map, int x, int y);
 };
 
 #endif // DUNGEONGENERATOR_HPP

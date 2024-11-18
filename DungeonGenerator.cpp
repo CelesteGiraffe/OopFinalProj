@@ -14,6 +14,7 @@ void DungeonGenerator::generate() {
     generateRooms();
     generateCorridors();
     placeEntranceAndExit();
+    clearLikeWalls(getMap());
 }
 
 Map& DungeonGenerator::getMap() {
@@ -164,6 +165,23 @@ void DungeonGenerator::placeEntranceAndExit() {
     map.setValue(lastRoomCenter.first, lastRoomCenter.second, EXIT);
 }
 
+void DungeonGenerator::clearLikeWalls(Map& map) {
+    std::vector<std::pair<int, int>> toBeRemoved;
+
+    for (int i = 1; i < map.getWidth() - 1; ++i) {
+        for (int j = 1; j < map.getHeight() - 1; ++j) {
+            if (map.getValue(i, j) == WALL && isSurroundedByWalls(map, i, j)) {
+                toBeRemoved.emplace_back(i, j);
+            }
+        }
+    }
+
+    for (auto &cell : toBeRemoved) {
+        map.setValue(cell.first, cell.second, BLANK);
+    }
+}
+
+
 // Might not need to create doors in the rooms because this technically does it for me.
 void DungeonGenerator::carveHorizontalCorridor(int x1, int x2, int y) {
     //Only need the Y in the Centre because it's at the same level as the other due to no diagnal rooms.
@@ -180,4 +198,16 @@ void DungeonGenerator::carveVerticalCorridor(int y1, int y2, int x) {
     for (int y = start; y <= end; ++y) {
         map.setValue(x, y, PATH); // PATH
     }
+}
+
+bool DungeonGenerator::isSurroundedByWalls(const Map& map, int x, int y) {
+    int direction[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    for (auto &dir : direction) {
+        int nx = x + dir[0];
+        int ny = y + dir[1];
+        if (nx < 0 || ny < 0 || nx >= map.getWidth() || ny >= map.getHeight() || map.getValue(nx, ny) != WALL) {
+            return false;
+        }
+    }
+    return true;
 }

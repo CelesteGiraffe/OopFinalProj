@@ -73,11 +73,13 @@ void Map::displayConsole() const {
             if (value == WALL) {            // Wall
                 std::cout << '#';
             } else if (value == PATH) {     // Open path
-                std::cout << '.';
+                std::cout << ' ';
             } else if (value == ENTRANCE) { // Entrance
                 std::cout << 'E';
             } else if (value == EXIT) {     // Exit
                 std::cout << 'X';
+            } else if (value = BLANK) {
+                std::cout << '.';
             } else {
                 std::cout << '?';           // Unknown cell type
             }

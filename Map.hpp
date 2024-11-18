@@ -9,6 +9,7 @@ const float WALL = 1.0f;
 const float PATH = 0.0f;
 const float ENTRANCE = -1.0f;
 const float EXIT = -2.0f;
+const float BLANK = 10.0f;
 
 // constants for outdoor height maps
 //... need to be implemented.
