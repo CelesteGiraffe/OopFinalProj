@@ -1,0 +1,32 @@
+# Compiler and flags
+CXX = c++
+CXXFLAGS = -std=c++17 -Wall -Wextra -g
+
+# Directories
+SRC_DIR = .
+OBJ_DIR = ./cmake-build-debug
+BIN_DIR = ./cmake-build-debug
+
+# Source files
+SRCS = $(wildcard $(SRC_DIR)/*.cpp)
+OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
+
+# Executable name
+TARGET = $(BIN_DIR)/untitled
+
+# Default target
+all: $(TARGET)
+
+# Link the executable
+$(TARGET): $(OBJS)
+    $(CXX) $(CXXFLAGS) -o $@ $^
+
+# Compile source files to object files
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+    $(CXX) $(CXXFLAGS) -c -o $@ $<
+
+# Clean up build files
+clean:
+    rm -f $(OBJ_DIR)/*.o $(TARGET)
+
+.PHONY: all clean
