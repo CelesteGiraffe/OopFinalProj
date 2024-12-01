@@ -2,8 +2,7 @@
 #include "GeneratorFactory.hpp"
 
 // To DO:
-// Create a MAKE file to compile the project. 
-// Comment the CPP final implementations with doxygen style comments
+// Create a MAKE file to compile the project.
 // Utilize the factory to create a Terrain generator and display the generated map to the console.
 // Create a Dungeon and Terrain with a simplistic implementation of the Perlin Noise algorithm.
 // -- Create the PerlinNoise Algorithm's implementation.
@@ -20,7 +19,7 @@
 int main() {
     // Sophie's number 60069
     // This see is my test seed 23042934
-    unsigned int seed = 3;
+    unsigned int seed = 7;
     int width = 80;
     int height = 20;
 
