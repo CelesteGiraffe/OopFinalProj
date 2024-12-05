@@ -1,0 +1,75 @@
+\doxysection{Room Struct Reference}
+\hypertarget{struct_room}{}\label{struct_room}\index{Room@{Room}}
+
+
+Represents a rectangular room in the dungeon.  
+
+
+
+
+{\ttfamily \#include $<$Room.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{struct_room_af0fe945aefe27558686e3cd08c798413}{intersects}} (const \mbox{\hyperlink{struct_room}{Room}} \&other) const
+\begin{DoxyCompactList}\small\item\em Checks if this room intersects with another room. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{struct_room_a3fc3034a1c2f7816128b27596ed943dc}{center}} () const
+\begin{DoxyCompactList}\small\item\em Gets the center point of the room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_room_a7e5d5a363ed3c93efc6b1c321f0ec957}\label{struct_room_a7e5d5a363ed3c93efc6b1c321f0ec957} 
+int {\bfseries x}
+\item 
+\Hypertarget{struct_room_a8bfbccf2843aab2175743f8d9b5ffe48}\label{struct_room_a8bfbccf2843aab2175743f8d9b5ffe48} 
+int {\bfseries y}
+\begin{DoxyCompactList}\small\item\em Top-\/left corner coordinates of the room. \end{DoxyCompactList}\item 
+\Hypertarget{struct_room_a0c68c6762e7d93eb459ba552dadaf308}\label{struct_room_a0c68c6762e7d93eb459ba552dadaf308} 
+int {\bfseries width}
+\item 
+\Hypertarget{struct_room_ab7d56b80d9eeefca79a2e83447ad4d66}\label{struct_room_ab7d56b80d9eeefca79a2e83447ad4d66} 
+int {\bfseries height}
+\begin{DoxyCompactList}\small\item\em Dimensions of the room. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a rectangular room in the dungeon. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_room_a3fc3034a1c2f7816128b27596ed943dc}\index{Room@{Room}!center@{center}}
+\index{center@{center}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily \label{struct_room_a3fc3034a1c2f7816128b27596ed943dc} 
+std\+::pair$<$ int, int $>$ Room\+::center (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the center point of the room. 
+
+\begin{DoxyReturn}{Returns}
+A pair of integers representing the center coordinates. 
+\end{DoxyReturn}
+\Hypertarget{struct_room_af0fe945aefe27558686e3cd08c798413}\index{Room@{Room}!intersects@{intersects}}
+\index{intersects@{intersects}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily \label{struct_room_af0fe945aefe27558686e3cd08c798413} 
+bool Room\+::intersects (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_room}{Room}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if this room intersects with another room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other room to check intersection with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if rooms intersect, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Room.\+hpp\end{DoxyCompactItemize}

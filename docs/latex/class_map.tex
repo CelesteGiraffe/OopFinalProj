@@ -1,0 +1,158 @@
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
+
+
+Stores the generated map data and provides utility functions.  
+
+
+
+
+{\ttfamily \#include $<$Map.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_a8497952fd6e1f0584d868e6ceb97d42d}{Map}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_map}{Map} with given dimensions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a5c6b793d40369a275e987b7311ae60ad}{set\+Value}} (int x, int y, float value)
+\begin{DoxyCompactList}\small\item\em Sets the value at a specific coordinate. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_map_a311690bd07acf0bdf218382a70ef3c9a}{get\+Value}} (int x, int y) const
+\begin{DoxyCompactList}\small\item\em Gets the value at a specific coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_ab3bcf8020a93a7d7f30e50798c8f3a24}{save}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em Saves the map data to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_map_a5ef9c875e9e0c3247a60016c2e5ff449}{load}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads the map data from a file. \end{DoxyCompactList}\item 
+\Hypertarget{class_map_a063029198ba099570acb9fed368d1c63}\label{class_map_a063029198ba099570acb9fed368d1c63} 
+void {\bfseries display\+Console} () const
+\begin{DoxyCompactList}\small\item\em Displays the map in the console with characters representing different cell types. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_map_ab3181204ba96eb15b96ee1ced85e198e}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Gets the width of the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_map_a67113f1ffac80d9a20b15fa18a58edc2}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Gets the height of the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores the generated map data and provides utility functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_map_a8497952fd6e1f0584d868e6ceb97d42d}\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily \label{class_map_a8497952fd6e1f0584d868e6ceb97d42d} 
+Map\+::\+Map (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_map}{Map} with given dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the map. \\
+\hline
+{\em height} & Height of the map. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_a67113f1ffac80d9a20b15fa18a58edc2}\index{Map@{Map}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily \label{class_map_a67113f1ffac80d9a20b15fa18a58edc2} 
+int Map\+::get\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the height of the map. 
+
+\begin{DoxyReturn}{Returns}
+The height. 
+\end{DoxyReturn}
+\Hypertarget{class_map_a311690bd07acf0bdf218382a70ef3c9a}\index{Map@{Map}!getValue@{getValue}}
+\index{getValue@{getValue}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_map_a311690bd07acf0bdf218382a70ef3c9a} 
+float Map\+::get\+Value (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the value at a specific coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate. \\
+\hline
+{\em y} & Y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value at the coordinate. 
+\end{DoxyReturn}
+\Hypertarget{class_map_ab3181204ba96eb15b96ee1ced85e198e}\index{Map@{Map}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily \label{class_map_ab3181204ba96eb15b96ee1ced85e198e} 
+int Map\+::get\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the width of the map. 
+
+\begin{DoxyReturn}{Returns}
+The width. 
+\end{DoxyReturn}
+\Hypertarget{class_map_a5ef9c875e9e0c3247a60016c2e5ff449}\index{Map@{Map}!load@{load}}
+\index{load@{load}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_map_a5ef9c875e9e0c3247a60016c2e5ff449} 
+void Map\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Loads the map data from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_ab3bcf8020a93a7d7f30e50798c8f3a24}\index{Map@{Map}!save@{save}}
+\index{save@{save}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_map_ab3bcf8020a93a7d7f30e50798c8f3a24} 
+void Map\+::save (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption}) const}
+
+
+
+Saves the map data to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_map_a5c6b793d40369a275e987b7311ae60ad}\index{Map@{Map}!setValue@{setValue}}
+\index{setValue@{setValue}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_map_a5c6b793d40369a275e987b7311ae60ad} 
+void Map\+::set\+Value (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{float}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Sets the value at a specific coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/coordinate. \\
+\hline
+{\em y} & Y-\/coordinate. \\
+\hline
+{\em value} & The value to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Map.\+hpp\item 
+Map.\+cpp\end{DoxyCompactItemize}

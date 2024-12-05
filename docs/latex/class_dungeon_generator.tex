@@ -1,0 +1,109 @@
+\doxysection{Dungeon\+Generator Class Reference}
+\hypertarget{class_dungeon_generator}{}\label{class_dungeon_generator}\index{DungeonGenerator@{DungeonGenerator}}
+
+
+Concrete generator that creates dungeon layouts.  
+
+
+
+
+{\ttfamily \#include $<$Dungeon\+Generator.\+hpp$>$}
+
+Inheritance diagram for Dungeon\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dungeon_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dungeon_generator_ae3edf4ad36b2822e91fb66160be9b5c0}{Dungeon\+Generator}} (int width, int height, unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_dungeon_generator}{Dungeon\+Generator}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dungeon_generator_a9518c830d0dea5152a83e36ced58998b}{generate}} () override
+\begin{DoxyCompactList}\small\item\em Generates the dungeon map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_map}{Map}} \& \mbox{\hyperlink{class_dungeon_generator_af1b280f2868fb703fd5653fe9b42d70a}{get\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Gets the generated map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_generator}{Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Generator} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_generator}{Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_generator_ad5d691b78715c9106cba77dc94615adb}{Generator}} (int width, int height, unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Protected constructor to prevent direct instantiation of the base class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_generator}{Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries width}
+\item 
+int {\bfseries height}
+\item 
+unsigned int {\bfseries seed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete generator that creates dungeon layouts. 
+
+Uses cellular automata to generate dungeons. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dungeon_generator_ae3edf4ad36b2822e91fb66160be9b5c0}\index{DungeonGenerator@{DungeonGenerator}!DungeonGenerator@{DungeonGenerator}}
+\index{DungeonGenerator@{DungeonGenerator}!DungeonGenerator@{DungeonGenerator}}
+\doxysubsubsection{\texorpdfstring{DungeonGenerator()}{DungeonGenerator()}}
+{\footnotesize\ttfamily \label{class_dungeon_generator_ae3edf4ad36b2822e91fb66160be9b5c0} 
+Dungeon\+Generator\+::\+Dungeon\+Generator (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{unsigned int}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_dungeon_generator}{Dungeon\+Generator}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the dungeon. \\
+\hline
+{\em height} & Height of the dungeon. \\
+\hline
+{\em seed} & Seed for random number generation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dungeon_generator_a9518c830d0dea5152a83e36ced58998b}\index{DungeonGenerator@{DungeonGenerator}!generate@{generate}}
+\index{generate@{generate}!DungeonGenerator@{DungeonGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{class_dungeon_generator_a9518c830d0dea5152a83e36ced58998b} 
+void Dungeon\+Generator\+::generate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the dungeon map. 
+
+
+
+Implements \mbox{\hyperlink{class_generator_a2c713266dfc004d839064c1a3df62fc2}{Generator}}.
+
+\Hypertarget{class_dungeon_generator_af1b280f2868fb703fd5653fe9b42d70a}\index{DungeonGenerator@{DungeonGenerator}!getMap@{getMap}}
+\index{getMap@{getMap}!DungeonGenerator@{DungeonGenerator}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily \label{class_dungeon_generator_af1b280f2868fb703fd5653fe9b42d70a} 
+\mbox{\hyperlink{class_map}{Map}} \& Dungeon\+Generator\+::get\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the generated map. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the \doxylink{class_map}{Map} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dungeon\+Generator.\+hpp\item 
+Dungeon\+Generator.\+cpp\end{DoxyCompactItemize}

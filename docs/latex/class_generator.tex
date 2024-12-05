@@ -1,0 +1,91 @@
+\doxysection{Generator Class Reference}
+\hypertarget{class_generator}{}\label{class_generator}\index{Generator@{Generator}}
+
+
+Abstract base class for all procedural content generators. Could be used for generating things ouside of Dungeons like Terrain...  
+
+
+
+
+{\ttfamily \#include $<$Generator.\+hpp$>$}
+
+Inheritance diagram for Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_generator_a175792ff2622a6ce48bf2adab7e09e58}\label{class_generator_a175792ff2622a6ce48bf2adab7e09e58} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Generator} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_generator_a2c713266dfc004d839064c1a3df62fc2}{generate}} ()=0
+\begin{DoxyCompactList}\small\item\em virtual method for generating content wihin all derived classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_generator_ad5d691b78715c9106cba77dc94615adb}{Generator}} (int width, int height, unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Protected constructor to prevent direct instantiation of the base class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_generator_a302511bce31796e3676d6caa3056b7e0}\label{class_generator_a302511bce31796e3676d6caa3056b7e0} 
+int {\bfseries width}
+\item 
+\Hypertarget{class_generator_a62408127501bf4c33dc6c61588ef7021}\label{class_generator_a62408127501bf4c33dc6c61588ef7021} 
+int {\bfseries height}
+\item 
+\Hypertarget{class_generator_a8ea0309b027835dcc6816cd0ecf485a5}\label{class_generator_a8ea0309b027835dcc6816cd0ecf485a5} 
+unsigned int {\bfseries seed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all procedural content generators. Could be used for generating things ouside of Dungeons like Terrain... 
+
+interface for content generator types. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_generator_ad5d691b78715c9106cba77dc94615adb}\index{Generator@{Generator}!Generator@{Generator}}
+\index{Generator@{Generator}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{Generator()}{Generator()}}
+{\footnotesize\ttfamily \label{class_generator_ad5d691b78715c9106cba77dc94615adb} 
+Generator\+::\+Generator (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{unsigned int}]{seed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Protected constructor to prevent direct instantiation of the base class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the content to generate. \\
+\hline
+{\em height} & Height of the content to generate. \\
+\hline
+{\em seed} & Seed for random number generation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_generator_a2c713266dfc004d839064c1a3df62fc2}\index{Generator@{Generator}!generate@{generate}}
+\index{generate@{generate}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{class_generator_a2c713266dfc004d839064c1a3df62fc2} 
+virtual void Generator\+::generate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual method for generating content wihin all derived classes. 
+
+
+
+Implemented in \mbox{\hyperlink{class_dungeon_generator_a9518c830d0dea5152a83e36ced58998b}{Dungeon\+Generator}}, and \mbox{\hyperlink{class_terrain_generator_ab88b84e7e919e5181c241e2158e758ec}{Terrain\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Generator.\+hpp\end{DoxyCompactItemize}

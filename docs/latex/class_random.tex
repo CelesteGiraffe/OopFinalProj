@@ -1,0 +1,105 @@
+\doxysection{Random Class Reference}
+\hypertarget{class_random}{}\label{class_random}\index{Random@{Random}}
+
+
+Singleton class for random number generation.  
+
+
+
+
+{\ttfamily \#include $<$Random.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_random_a7aac570ca0e486704a9c7f27ea884fe6}{get\+Int}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Generates a random integer between min and max. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_random_a7c208cfc4a9859dbf23bd45e73e26ffa}{get\+Float}} (float min, float max)
+\begin{DoxyCompactList}\small\item\em Generates a random float between min and max. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_random_a97a058855254aa82cc76fe2ee77339be}{set\+Seed}} (unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Sets the seed for random number generation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_random}{Random}} \& \mbox{\hyperlink{class_random_a2aa30d2f678fc76f75efc60356c6ea4d}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of \doxylink{class_random}{Random}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class for random number generation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_random_a7c208cfc4a9859dbf23bd45e73e26ffa}\index{Random@{Random}!getFloat@{getFloat}}
+\index{getFloat@{getFloat}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{getFloat()}{getFloat()}}
+{\footnotesize\ttfamily \label{class_random_a7c208cfc4a9859dbf23bd45e73e26ffa} 
+float Random\+::get\+Float (\begin{DoxyParamCaption}\item[{float}]{min}{, }\item[{float}]{max}{}\end{DoxyParamCaption})}
+
+
+
+Generates a random float between min and max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimum value. \\
+\hline
+{\em max} & Maximum value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_random}{Random} float. 
+\end{DoxyReturn}
+\Hypertarget{class_random_a2aa30d2f678fc76f75efc60356c6ea4d}\index{Random@{Random}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_random_a2aa30d2f678fc76f75efc60356c6ea4d} 
+\mbox{\hyperlink{class_random}{Random}} \& Random\+::get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the singleton instance of \doxylink{class_random}{Random}. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the \doxylink{class_random}{Random} instance. 
+\end{DoxyReturn}
+\Hypertarget{class_random_a7aac570ca0e486704a9c7f27ea884fe6}\index{Random@{Random}!getInt@{getInt}}
+\index{getInt@{getInt}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}}
+{\footnotesize\ttfamily \label{class_random_a7aac570ca0e486704a9c7f27ea884fe6} 
+int Random\+::get\+Int (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})}
+
+
+
+Generates a random integer between min and max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimum value. \\
+\hline
+{\em max} & Maximum value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_random}{Random} integer. 
+\end{DoxyReturn}
+\Hypertarget{class_random_a97a058855254aa82cc76fe2ee77339be}\index{Random@{Random}!setSeed@{setSeed}}
+\index{setSeed@{setSeed}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{setSeed()}{setSeed()}}
+{\footnotesize\ttfamily \label{class_random_a97a058855254aa82cc76fe2ee77339be} 
+void Random\+::set\+Seed (\begin{DoxyParamCaption}\item[{unsigned int}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Sets the seed for random number generation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & The seed value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Random.\+hpp\item 
+Random.\+cpp\end{DoxyCompactItemize}

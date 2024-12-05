@@ -1,0 +1,51 @@
+\doxysection{Generator\+Factory Class Reference}
+\hypertarget{class_generator_factory}{}\label{class_generator_factory}\index{GeneratorFactory@{GeneratorFactory}}
+
+
+Factory class to create generator instances based on type.  
+
+
+
+
+{\ttfamily \#include $<$Generator\+Factory.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_generator}{Generator}} $>$ \mbox{\hyperlink{class_generator_factory_ad8282fb112ae6bd075bee7946adcabeb}{create\+Generator}} (const std\+::string \&type, int width, int height, unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Creates a generator of specified type. Currently supports "{}terrain"{} and "{}dungeon"{}. Could be expanded to support more types using something like an ENUM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class to create generator instances based on type. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_generator_factory_ad8282fb112ae6bd075bee7946adcabeb}\index{GeneratorFactory@{GeneratorFactory}!createGenerator@{createGenerator}}
+\index{createGenerator@{createGenerator}!GeneratorFactory@{GeneratorFactory}}
+\doxysubsubsection{\texorpdfstring{createGenerator()}{createGenerator()}}
+{\footnotesize\ttfamily \label{class_generator_factory_ad8282fb112ae6bd075bee7946adcabeb} 
+static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_generator}{Generator}} $>$ Generator\+Factory\+::create\+Generator (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type}{, }\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{unsigned int}]{seed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a generator of specified type. Currently supports "{}terrain"{} and "{}dungeon"{}. Could be expanded to support more types using something like an ENUM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of the generator ("{}terrain"{} or "{}dungeon"{}). \\
+\hline
+{\em width} & Width of the content. \\
+\hline
+{\em height} & Height of the content. \\
+\hline
+{\em seed} & Seed for random number generation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique pointer to a \doxylink{class_generator}{Generator} instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Generator\+Factory.\+hpp\end{DoxyCompactItemize}

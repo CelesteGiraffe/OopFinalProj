@@ -1,0 +1,79 @@
+\doxysection{Perlin\+Noise Class Reference}
+\hypertarget{class_perlin_noise}{}\label{class_perlin_noise}\index{PerlinNoise@{PerlinNoise}}
+
+
+Implementation of the Perlin noise algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Perlin\+Noise.\+hpp$>$}
+
+Inheritance diagram for Perlin\+Noise\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_perlin_noise}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_perlin_noise_a05b0e255613e36444271c38d24c6aa01}{Perlin\+Noise}} (unsigned int seed)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_perlin_noise}{Perlin\+Noise} generator. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_perlin_noise_a7f90b5691cabe75d14b19e61e9adf29b}{get\+Value}} (float x, float y) override
+\begin{DoxyCompactList}\small\item\em Gets the noise value at a specific coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_noise_algorithm}{Noise\+Algorithm}}}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the Perlin noise algorithm. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_perlin_noise_a05b0e255613e36444271c38d24c6aa01}\index{PerlinNoise@{PerlinNoise}!PerlinNoise@{PerlinNoise}}
+\index{PerlinNoise@{PerlinNoise}!PerlinNoise@{PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{PerlinNoise()}{PerlinNoise()}}
+{\footnotesize\ttfamily \label{class_perlin_noise_a05b0e255613e36444271c38d24c6aa01} 
+Perlin\+Noise\+::\+Perlin\+Noise (\begin{DoxyParamCaption}\item[{unsigned int}]{seed}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_perlin_noise}{Perlin\+Noise} generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed for random number generation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_perlin_noise_a7f90b5691cabe75d14b19e61e9adf29b}\index{PerlinNoise@{PerlinNoise}!getValue@{getValue}}
+\index{getValue@{getValue}!PerlinNoise@{PerlinNoise}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_perlin_noise_a7f90b5691cabe75d14b19e61e9adf29b} 
+float Perlin\+Noise\+::get\+Value (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the noise value at a specific coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate. \\
+\hline
+{\em y} & The y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The noise value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_noise_algorithm_aba0c17dece71d80828260ffb7d06e654}{Noise\+Algorithm}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Perlin\+Noise.\+hpp\item 
+Perlin\+Noise.\+cpp\end{DoxyCompactItemize}

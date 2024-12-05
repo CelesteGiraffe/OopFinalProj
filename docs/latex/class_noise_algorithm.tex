@@ -1,0 +1,57 @@
+\doxysection{Noise\+Algorithm Class Reference}
+\hypertarget{class_noise_algorithm}{}\label{class_noise_algorithm}\index{NoiseAlgorithm@{NoiseAlgorithm}}
+
+
+Interface for noise algorithms used in terrain generation.  
+
+
+
+
+{\ttfamily \#include $<$Noise\+Algorithm.\+hpp$>$}
+
+Inheritance diagram for Noise\+Algorithm\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noise_algorithm}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual float \mbox{\hyperlink{class_noise_algorithm_aba0c17dece71d80828260ffb7d06e654}{get\+Value}} (float x, float y)=0
+\begin{DoxyCompactList}\small\item\em Gets the noise value at a specific coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for noise algorithms used in terrain generation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_noise_algorithm_aba0c17dece71d80828260ffb7d06e654}\index{NoiseAlgorithm@{NoiseAlgorithm}!getValue@{getValue}}
+\index{getValue@{getValue}!NoiseAlgorithm@{NoiseAlgorithm}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_noise_algorithm_aba0c17dece71d80828260ffb7d06e654} 
+virtual float Noise\+Algorithm\+::get\+Value (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the noise value at a specific coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate. \\
+\hline
+{\em y} & The y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The noise value. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_perlin_noise_a7f90b5691cabe75d14b19e61e9adf29b}{Perlin\+Noise}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Noise\+Algorithm.\+hpp\end{DoxyCompactItemize}

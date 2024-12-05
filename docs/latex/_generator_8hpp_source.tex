@@ -1,0 +1,24 @@
+\doxysection{Generator.\+hpp}
+\hypertarget{_generator_8hpp_source}{}\label{_generator_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GENERATOR\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GENERATOR\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_generator}{Generator}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_generator_a175792ff2622a6ce48bf2adab7e09e58}{\string~Generator}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_generator_a2c713266dfc004d839064c1a3df62fc2}{generate}}()\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00023\ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00024\ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00025\ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ seed;\ \textcolor{comment}{//\ Always\ above\ 0}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \ \mbox{\hyperlink{class_generator_ad5d691b78715c9106cba77dc94615adb}{Generator}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ seed)}
+\DoxyCodeLine{00034\ \ \ \ \ \ :\ width(width),\ height(height),\ seed(seed)\ \{\}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GENERATOR\_HPP}}
+
+\end{DoxyCode}

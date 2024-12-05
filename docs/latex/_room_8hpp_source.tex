@@ -1,0 +1,27 @@
+\doxysection{Room.\+hpp}
+\hypertarget{_room_8hpp_source}{}\label{_room_8hpp_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Celeste\ Artley\ on\ 17/11/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ROOM\_HPP}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ROOM\_HPP}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_room}{Room}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ \mbox{\hyperlink{struct_room_a8bfbccf2843aab2175743f8d9b5ffe48}{y}};\ }
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width,\ \mbox{\hyperlink{struct_room_ab7d56b80d9eeefca79a2e83447ad4d66}{height}};\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_room_af0fe945aefe27558686e3cd08c798413}{intersects}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_room}{Room}}\&\ other)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (x\ <=\ other.x\ +\ other.width\ \&\&\ x\ +\ width\ >=\ other.x\ \&\&}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_room_a8bfbccf2843aab2175743f8d9b5ffe48}{y\ <=\ other.y\ +\ other.height\ \&\&\ y\ +\ height\ >}}=\ other.\mbox{\hyperlink{struct_room_a8bfbccf2843aab2175743f8d9b5ffe48}{y}});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ std::pair<int,\ int>\ \mbox{\hyperlink{struct_room_a3fc3034a1c2f7816128b27596ed943dc}{center}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ x\ +\ width\ /\ 2,\ \mbox{\hyperlink{struct_room_a8bfbccf2843aab2175743f8d9b5ffe48}{y}}\ +\ \mbox{\hyperlink{struct_room_ab7d56b80d9eeefca79a2e83447ad4d66}{height}}\ /\ 2\ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ROOM\_HPP}}
+
+\end{DoxyCode}
