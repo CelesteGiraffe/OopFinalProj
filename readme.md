@@ -11,3 +11,6 @@ Abstract Classes - Generator.hpp NoiseAlgorithm.hpp
 
 Concrete Implementations - TerrainGenerator, DungeonGenerator, PerlinNose, CellularAutomita (maybe)
 
+Factory GeneratorFactory.hpp
+
+Strategy Pattern with the TerrainGenerator using different types of noise algorithm that was to be implemented with NoiseAlgorithm strategy
